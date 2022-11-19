@@ -356,21 +356,22 @@ import math
 #     return count
 # print(beautifulDays(20,23,6))
 
-def getMoneySpent(keyboards, drives, b):
-    keyboards.sort()
-    drives.sort()
-    purchases = []
-    for i in range(len(keyboards)):
-        if i < b:
-            for j in range(len(drives)):
-                if keyboards[i] + drives[j] <= b:
-                    purchases.append(keyboards[i] + drives[j])
-    purchases.sort()
-    if len(purchases) > 0:
-        return purchases[len(purchases)-1]
-    else:
-        return -1
-    return options
+# def getMoneySpent(keyboards, drives, b):
+#     keyboards.sort()
+#     drives.sort()
+#     purchases = []
+#     for i in range(len(keyboards)):
+#         if i < b:
+#             for j in range(len(drives)):
+#                 if keyboards[i] + drives[j] <= b:
+#                     purchases.append(keyboards[i] + drives[j])
+#     purchases.sort()
+#     if len(purchases) > 0:
+#         return purchases[len(purchases)-1]
+#     else:
+#         return -1
+#     return options
 
 
-print(getMoneySpent([40,50,60,20,30,15,18],[5,8,12,14,23,43],60))
+# print(getMoneySpent([40,50,60,20,30,15,18],[5,8,12,14,23,43],60))
+
